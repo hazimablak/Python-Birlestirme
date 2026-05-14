@@ -1,50 +1,17 @@
-# 📖 Quran Unified JSON Merger
+# 📖 Quran JSON Merger
 
-A lightweight Python script that merges **Arabic, Turkish, and English Quran JSON files** into a single unified dataset.
+A simple Python script that merges Arabic, Turkish, and English Quran JSON files into one unified dataset.
 
 ---
+
+<details open>
+<summary>🇬🇧 English</summary>
 
 ## ✨ Features
-
-- Combines 3 different JSON sources
-- Supports:
-  - 🇸🇦 Arabic text
-  - 🇹🇷 Turkish translation
-  - 🇬🇧 English translation
-- Automatic verse matching by `sura` and `aya`
-- Error & missing verse warnings
-- Clean formatted output JSON
-
----
-
-<details>
-<summary>🇹🇷 Türkçe Açıklama</summary>
-
-Bu proje, Kur’an-ı Kerim verilerini farklı dillerden tek bir JSON dosyasında birleştirir.
-
-### Özellikler
-
-- Arapça, Türkçe ve İngilizce verileri birleştirir
-- Sure ve ayet numarasına göre eşleştirme yapar
-- Eksik veriler için uyarı verir
-- Düzenli ve okunabilir çıktı oluşturur
-
-### Çıktı Örneği
-
-```json
-{
-  "id": 1,
-  "sura": 1,
-  "aya": 1,
-  "text_ar": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
-  "text_tr": "Rahmân ve Rahîm olan Allah’ın adıyla.",
-  "text_en": "In the name of Allah, the Entirely Merciful, the Especially Merciful."
-}
-```
-
-</details>
-
----
+- Combines `tr.json`, `en.json`, and `ar.json`
+- Matches verses by `sura` and `aya`
+- Creates a clean unified JSON output
+- Warns about missing verses/files
 
 ## 🚀 Usage
 
@@ -52,15 +19,11 @@ Bu proje, Kur’an-ı Kerim verilerini farklı dillerden tek bir JSON dosyasınd
 python main.py
 ```
 
----
-
 ## 📂 Required Files
 
 - `tr.json`
 - `en.json`
 - `ar.json`
-
----
 
 ## 📦 Output
 
@@ -68,14 +31,46 @@ python main.py
 quran_unified.json
 ```
 
+</details>
+
+---
+
+<details>
+<summary>🇹🇷 Türkçe</summary>
+
+## ✨ Özellikler
+- `tr.json`, `en.json` ve `ar.json` dosyalarını birleştirir
+- Sure ve ayet numarasına göre eşleştirme yapar
+- Düzenli tek bir JSON çıktısı oluşturur
+- Eksik dosya ve ayetler için uyarı verir
+
+## 🚀 Kullanım
+
+```bash
+python main.py
+```
+
+## 📂 Gerekli Dosyalar
+
+- `tr.json`
+- `en.json`
+- `ar.json`
+
+## 📦 Çıktı
+
+```bash
+quran_unified.json
+```
+
+</details>
+
 ---
 
 ## 🛠️ Technologies
-
 - Python
 - JSON
 - File Processing
 
 ---
 
-⭐ Feel free to fork and improve the project.
+⭐ Developed by Hazım Ablak
